@@ -84,7 +84,7 @@ var getNodeForWord = function(word) {
 		makeKiddos(responseParse(parent, httpRequest.responseText));
 	    }
 	};
-	httpRequest.open("GET", "http://api.pearson.com/v2/dictionaries/laad3/entries?headword=" + parent.textContent);
+	httpRequest.open("GET", "https://api.duckduckgo.com/?format=json&q=" + parent.textContent);
 	httpRequest.send();
     }
 };
