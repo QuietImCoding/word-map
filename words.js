@@ -55,7 +55,7 @@ var makeKiddos = function(info) {
 var responseParse = function(parent, resp) {
     var parsed = JSON.parse(resp);
     try {
-	var def = parsed.results[0].senses[0].definition;
+	var def = parsed.RelatedTopics[1].Text;
     } catch (e) {
 	console.log("Word not found");
 	return(null);
